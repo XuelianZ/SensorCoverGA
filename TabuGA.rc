@@ -1,0 +1,248 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TabuGA.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TabuGA.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TabuGA"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TabuGA 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TABUGA_DIALOG DIALOGEX 0, 0, 802, 429
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TabuGA"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_PIC1,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_BORDER,7,7,444,415
+    EDITTEXT        IDC_EDIT1,452,321,343,101,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "遗传代数：",IDC_STATIC,462,20,41,8
+    LTEXT           "交叉概率：",IDC_STATIC,462,37,41,8
+    LTEXT           "变异概率：",IDC_STATIC,551,18,41,8
+    EDITTEXT        IDC_EDIT2,503,16,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,503,35,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,593,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "种群数量：",IDC_STATIC,551,37,41,8
+    EDITTEXT        IDC_EDIT8,593,35,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始优化",IDC_BUTtest,459,59,50,14
+    LTEXT           "运行时间：",IDC_STATIC,537,63,41,8
+    EDITTEXT        IDC_EDIT9,577,59,58,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ms",IDC_STATIC,639,62,11,10
+    LTEXT           "候选解个数：",IDC_STATIC,692,19,49,8
+    LTEXT           "禁忌长度：",IDC_STATIC,700,37,41,8
+    LTEXT           "寻优次数：",IDC_STATIC,700,53,41,8
+    EDITTEXT        IDC_EDIT5,746,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,746,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,746,49,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "遗传算法参数设置",IDC_STATIC,458,7,233,48
+    GROUPBOX        "禁忌搜索算法参数设置",IDC_STATIC,689,7,106,65
+    CONTROL         "",IDC_PIC2,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_BORDER,465,81,259,140
+    CONTROL         "",IDC_PIC3,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_BORDER,465,221,236,94
+    LTEXT           "",IDC_STATIC,711,228,8,8
+    LTEXT           "统计次数：",IDC_STATIC,705,247,41,8
+    EDITTEXT        IDC_EDIT10,749,245,40,14,ES_AUTOHSCROLL
+    LTEXT           "平均个数：",IDC_STATIC,706,273,41,8
+    EDITTEXT        IDC_EDIT11,747,271,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "开始统计",IDC_BUTstatStab,721,303,50,14
+    GROUPBOX        "统计",IDC_STATIC,704,237,91,61
+    PUSHBUTTON      "传感器数统计",IDC_BUTsN,731,95,56,23
+    PUSHBUTTON      "适应度值统计",IDC_BUTsF,733,141,54,24
+    LTEXT           "传感器节点数;",IDC_STATIC,635,17,53,8
+    EDITTEXT        IDC_EDIT12,639,35,47,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TabuGA Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TabuGA\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TabuGA.EXE\0"
+            VALUE "ProductName", "TabuGA 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TABUGA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 795
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 422
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TabuGA(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TabuGA.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
